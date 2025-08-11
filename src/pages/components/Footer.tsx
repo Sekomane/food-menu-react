@@ -1,34 +1,47 @@
 import React from 'react';
 
 export default function Footer() {
-  return (
+   return (
     <footer className="footer">
-      {/* Left image block */}
       <div className="footer-left">
-        <img src="/BCO.10d80141-d81e-44d1-bdc4-056e1f015eb0.png" alt="Hello" className="footer-main-img" />
+        <img 
+          src={`${process.env.PUBLIC_URL}/BCO.10d80141-d81e-44d1-bdc4-056e1f015eb0.png`} 
+          alt="Hello" 
+          className="footer-main-img" 
+        />
       </div>
 
-      {/* Center benefits */}
       <div className="footer-benefits">
         <h4 className="footer-heading">OUR MENU BENEFIT</h4>
         <div className="benefit-list">
           <div className="benefit-item">
-            <img src="/fresh.png" alt="Fresh" className="benefit-icon" />
+            <img 
+              src={`${process.env.PUBLIC_URL}/fresh.png`} 
+              alt="Fresh" 
+              className="benefit-icon" 
+            />
             <div>
               <p className="benefit-title">FRESH</p>
               <small>Plays grand no anomalies</small>
             </div>
           </div>
           <div className="benefit-item">
-            <img src="/vitamin.png" alt="Vitamin" className="benefit-icon" />
-
+            <img 
+              src={`${process.env.PUBLIC_URL}/vitamin.png`} 
+              alt="Vitamin" 
+              className="benefit-icon" 
+            />
             <div>
               <p className="benefit-title">VITAMIN</p>
               <small>Nispen non procers</small>
             </div>
           </div>
           <div className="benefit-item">
-            <img src="/amic.png" alt="Organic" className="benefit-icon" />
+            <img 
+              src={`${process.env.PUBLIC_URL}/amic.png`} 
+              alt="Organic" 
+              className="benefit-icon" 
+            />
             <div>
               <p className="benefit-title">ORE ANIC</p>
               <small>Towegales weruris</small>
@@ -37,7 +50,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Right opening hours */}
       <div className="footer-hours">
         <h4 className="footer-heading">OPENING HOURS</h4>
         <ul>
@@ -49,4 +61,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};

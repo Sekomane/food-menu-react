@@ -4,10 +4,8 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <header className="navbar">
-      
-
-<img src="/logo.png" alt="logo" className="logo-img" />
+ <header className="navbar">
+      <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" className="logo-img" />
       <div className="logo">Premium restaurant</div>
       <nav className="nav-links">
         <button className="nav-link">Home</button>
@@ -22,4 +20,4 @@ export default function Navbar() {
       </div>
     </header>
   );
-}
+};

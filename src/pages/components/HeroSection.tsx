@@ -3,20 +3,17 @@ import React from 'react';
 
 
 export default function HeroSection() {
-  return (
+return (
     <section className="hero"
       style={{
-        backgroundImage: `url('/header.png')`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/header.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         width: '100%',
-       height: '30vh',
-       paddingLeft: '30px',
-       
-       
+        minHeight: '60vh',
+        paddingLeft: '30px',
       }}
-
     >
       <div className="hero-text">
         <p>Premium Restaurant</p>
@@ -26,4 +23,4 @@ export default function HeroSection() {
       </div>
     </section>
   );
-}
+};
